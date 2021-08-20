@@ -1,0 +1,39 @@
+body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+div {
+  overflow: hidden;
+}
+
+#red-ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: bounce;
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 0;
+  }
+
+  90% {
+    transform: scale(1);
+  }
+  
+  to {
+    margin-top: 85vh;
+    transform: scale(1.8, 0.5);
+  }
+}
